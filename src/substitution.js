@@ -42,7 +42,7 @@ const substitutionModule = (function () {
 
     const duplicates = alphabet
       .split("")
-      .filter((char, _, dupes) => char === dupes.pop());
+      .filter((char, _, dupe) => char === dupe.pop());
 
     if (duplicates.length) return false;
 
